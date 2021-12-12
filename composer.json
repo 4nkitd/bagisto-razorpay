@@ -1,5 +1,5 @@
 {
-    "name": "dagar/razorpay-bagisto",
+    "name": "dagar/bagisto-razorpay",
     "description": "Razorpay Bagisto Integration",
     "type": "composer-plugin",
     "require": {
@@ -17,6 +17,16 @@
     "autoload": {
         "psr-4": {
             "Bagisto\\Razorpay\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bagisto\\Razorpay\\RazorpayServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Bagisto\\Razorpay\\Facade"
+            }
         }
     }
 }

@@ -28,6 +28,7 @@ class RazorpayServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerConfig();
+        $this->registerMigrations();
     }
 
     /**
@@ -44,5 +45,14 @@ class RazorpayServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             dirname(__DIR__) . '/Config/paymentmethods.php', 'paymentmethods'
         );
+    }
+
+    /**
+     * Register Migrations for the module
+     * 
+     * @return void
+     */
+    protected function registerMigrations(){
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 }
