@@ -1,5 +1,5 @@
 {
-    "name": "dagar/razorpay@bagisto",
+    "name": "dagar/razorpay_bagisto",
     "description": "Razorpay Bagisto Integration",
     "type": "composer-plugin",
     "require": {
