@@ -1,0 +1,22 @@
+{
+    "name": "bagisto/razorpay",
+    "description": "Razorpay Bagisto Integration",
+    "type": "composer-plugin",
+    "require": {
+        "bagisto/bagisto": "dev-master",
+        "razorpay/razorpay": "2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ankit",
+            "email": "ankit@dagar.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Bagisto\\Razorpay\\": "src"
+        }
+    }
+}
