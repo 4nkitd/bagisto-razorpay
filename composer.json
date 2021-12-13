@@ -23,7 +23,10 @@
             "providers": [
                 "Bagisto\\Razorpay\\Providers\\RazorpayServiceProvider"
             ],
-            "aliases": {}
+            "aliases": {},
+            "dont-discover": [
+                "laravel/dusk"
+            ]
         }
     }
 }
