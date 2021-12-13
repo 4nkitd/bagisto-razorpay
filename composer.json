@@ -1,7 +1,7 @@
 {
     "name": "dagar/bagisto-razorpay",
     "description": "Razorpay Bagisto Integration",
-    "type": "composer-plugin",
+    "type": "composer-package",
     "require": {
         "bagisto/bagisto": "dev-master"
     },
