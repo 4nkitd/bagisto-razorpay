@@ -31,7 +31,6 @@ class RazorpayServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerMigrations();
 
-        Artisan::call('config:cache');
         Artisan::call('view:cache');
 
     }
