@@ -3,8 +3,7 @@
     "description": "Razorpay Bagisto Integration",
     "type": "composer-plugin",
     "require": {
-        "bagisto/bagisto": "dev-master",
-        "razorpay/razorpay": "2.*"
+        "bagisto/bagisto": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -24,9 +23,7 @@
             "providers": [
                 "Bagisto\\Razorpay\\RazorpayServiceProvider"
             ],
-            "aliases": {
-                "Debugbar": "Bagisto\\Razorpay\\Facade"
-            }
+            "aliases": {}
         }
     }
 }
