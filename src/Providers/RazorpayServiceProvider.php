@@ -3,6 +3,7 @@
 namespace Bagisto\Razorpay\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Artisan;
 
 class RazorpayServiceProvider extends ServiceProvider
 {
@@ -29,6 +30,12 @@ class RazorpayServiceProvider extends ServiceProvider
     {
         $this->registerConfig();
         $this->registerMigrations();
+
+        Artisan::call('optimize');
+        Artisan::call('route:cache');
+        Artisan::call('config:cache');
+        Artisan::call('view:cache');
+
     }
 
     /**
