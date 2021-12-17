@@ -12,7 +12,7 @@
             "email": "ankit@dagar.in"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "0.0.1",
     "autoload": {
         "psr-4": {
             "Bagisto\\Razorpay\\": "src"
