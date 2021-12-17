@@ -2,9 +2,7 @@
     "name": "dagar/bagisto-razorpay",
     "description": "Razorpay Bagisto Integration",
     "type": "composer-package",
-    "require": {
-        "bagisto/bagisto": "dev-master"
-    },
+    "require": {},
     "license": "MIT",
     "authors": [
         {
