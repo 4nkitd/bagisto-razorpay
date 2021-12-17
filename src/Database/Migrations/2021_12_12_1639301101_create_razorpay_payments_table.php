@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Schema;
 
 
 
-class CreateRzpPaymentsTable extends Migration
+class CreateRazorpayPaymentsTable extends Migration
 
 {
 
@@ -27,8 +27,8 @@ class CreateRzpPaymentsTable extends Migration
 		$table->string('razorpay_payment_id',40)->nullable()->default('NULL');
 		$table->string('razorpay_invoice_status',40)->default('issued');
 		$table->string('razorpay_invoice_receipt',40)->nullable()->default('NULL');
-        $table->timestemps();
-		$table->softDelets('deleted_at');
+        $table->timestamps();
+		$table->softDeletes();
 
         });
 
